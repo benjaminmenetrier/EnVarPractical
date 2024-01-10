@@ -78,13 +78,13 @@ for N in N_list:
 
 # Exercise 1.4: dirac test on the pure sampled covariance, operator formulation
 
-# Apply square-root adjoint
+# 1.4.1: Apply square-root adjoint
 # ...
 
-# Apply square-root
+# 1.4.2: Apply square-root
 # ...
 
-# Plot result
+# 1.4.3: Plot result
 # ...
 
 
@@ -111,13 +111,13 @@ for Rloc in Rloc_list:
 
 # Exercise 2.5: dirac test on the localized covariance with Rloc = 25, operator formulation
 
-# Apply square-root adjoint
+# 2.5.1: Apply square-root adjoint
 # ...
 
-# Apply square-root
+# 2.5.2: Apply square-root
 # ...
 
-# Plot result
+# 2.5.3: Plot result
 # ...
 
 
@@ -147,11 +147,11 @@ for beta_ens in beta_ens_list:
 
 # Exercise 3.6: dirac test on the localized covariance with weights = 0.6 / 0.4, operator formulation
 
-# Apply square-root adjoint
+# 3.6.1: Apply square-root adjoint
 # ...
 
-# Apply square-root
+# 3.6.2: Apply square-root
 # ...
 
-# Plot result
+# 3.6.3: Plot result
 # ...

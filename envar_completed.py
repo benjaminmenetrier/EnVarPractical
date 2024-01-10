@@ -97,17 +97,17 @@ plot_vector(dirac_test, "Dirac test: pure sampled covariance, matrix formulation
 
 # Exercise 1.4: dirac test on the pure sampled covariance, operator formulation
 
-# Apply square-root adjoint
+# 1.4.1: Apply square-root adjoint
 v = np.zeros(N)
 for j in range(N):
     v[j] = sum(pert[:,j]*dirac[:,0])
 
-# Apply square-root
+# 1.4.2: Apply square-root
 dirac_test_op = np.zeros((n,1))
 for j in range(N):
     dirac_test_op[:,0] = dirac_test_op[:,0] + v[j]*pert[:,j]
 
-# Plot result
+# 1.4.3: Plot result
 print("Difference between matrix and operator formulations: " + str(np.sum(np.abs(dirac_test_op-dirac_test))))
 plot_vector(dirac_test_op, "Dirac test: pure sampled covariance, operator formulation")
 
@@ -153,19 +153,19 @@ plot_vector(dirac_test, "Dirac test: localized covariance, matrix formulation")
 
 # Exercise 2.5: dirac test on the localized covariance with Rloc = 25, operator formulation
 
-# Apply square-root adjoint
+# 2.5.1: Apply square-root adjoint
 v = np.zeros((n, N))
 for j in range(N):
     xtmp = pert[:,j]*dirac[:,0]
     v[:,j] = np.matmul(np.transpose(Ul),xtmp)
 
-# Apply square-root
+# 2.5.2: Apply square-root
 dirac_test = np.zeros((n,1))
 for j in range(N):
     xtmp = np.matmul(Ul,v[:,j])
     dirac_test[:,0] = dirac_test[:,0] + pert[:,j]*xtmp
 
-# Plot result
+ # 2.5.3:Plot result
 plot_vector(dirac_test, "Dirac test: localized covariance, operator formulation")
 
 
@@ -210,7 +210,7 @@ plot_vector(dirac_test, "Dirac test: hybrid covariance, matrix formulation")
 
 # Exercise 3.6: dirac test on the localized covariance with weights = 0.6 / 0.4, operator formulation
 
-# Apply square-root adjoint
+# 3.6.1: Apply square-root adjoint
 v = np.zeros((n, N+1))
 for j in range(N):
     xtmp = np.sqrt(beta_ens)*dirac[:,0]
@@ -219,7 +219,7 @@ for j in range(N):
 xtmp = np.sqrt(beta_sta)*dirac[:,0]
 v[:,N] = np.matmul(np.transpose(Usta),xtmp)
 
-# Apply square-root
+# 3.6.2: Apply square-root
 dirac_test_op = np.zeros((n,1))
 for j in range(N):
     xtmp = np.matmul(Ul,v[:,j])
@@ -228,6 +228,6 @@ for j in range(N):
 xtmp = np.matmul(Usta,v[:,N])
 dirac_test_op[:,0] = dirac_test_op[:,0] + np.sqrt(beta_sta)*xtmp
 
-# Plot result
+# 3.6.3: Plot result
 print("Difference between matrix and operator formulations: " + str(np.sum(np.abs(dirac_test_op-dirac_test))))
 plot_vector(dirac_test, "Dirac test: localized covariance, operator formulation")
