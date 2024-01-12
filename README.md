@@ -1,9 +1,19 @@
 # EnVarPractical
 
-The script `envar_tocomplete.py` should be completed to practice the implementation of EnVar methods:
-- Exercise 1: about the pure sampled covariance matrix
-- Exercise 2: about the localized covariance matrix
-- Exercise 3: about the hybrid covariance matrix
+Scripts to practice the implementation of EnVar methods.
 
-Solutions are available in the script `envar_completed.py`.
-Some tools required in the exercises are provided in `utilities.py`.
+Goal: implement the different B matrices as full matrices and as sequences of sparse operators, and compare them with Dirac tests
+
+Content:
+- Exercise 1: pure sampled covariance matrix
+- Exercise 2: localized covariance matrix
+- Exercise 3: hybrid covariance matrix
+
+Requires the tools available in "utilities.py".
+
+Data assimilation formation at Cerfacs 2023.
+
+Programming: Benjamin Menetrier, 2023 (benjamin.menetrier@met.no)
+
+Licensing: this code is distributed under the APACHE 2 license
+  Copyright (c) 2023 Meteorologisk Institutt

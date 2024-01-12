@@ -44,10 +44,7 @@ def define_correlation_sqrt(n, R):
 ###############################################################################
 # generate_ensemble
 ###############################################################################
-def generate_ensemble(n, R, nens):
-    # Define correlation square-root
-    Ul = define_correlation_sqrt(n, R)
-
+def generate_ensemble(n, Ul, nens):
     # Generate Gaussian deviates
     X = np.random.normal(0.0, 1.0, (n, nens))
 
