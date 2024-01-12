@@ -12,12 +12,10 @@ Content:
 
 Requires the tools available in "utilities.py".
 
-Data assimilation formation at Cerfacs 2023.
-
-Programming: Benjamin Menetrier, 2023 (benjamin.menetrier@met.no)
+Programming: Benjamin Menetrier (benjamin.menetrier@met.no)
 
 Licensing: this code is distributed under the APACHE 2 license
-  Copyright (c) 2023 Meteorologisk Institutt
+Copyright (c) 2023-2024 Meteorologisk Institutt
 """
 
 ###############################################################################

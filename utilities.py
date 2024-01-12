@@ -8,12 +8,10 @@ Tools required for the EnVar exercises:
 - plot_matrix(A, title): plot matrix A with the provided title
 - plot_matrices(A1, title1, A2, title2): plot matrix A1 and A2 with the provided titles title1 and title2, respectively.
 
-Data assimilation formation at Cerfacs 2023.
-
-Programming: Benjamin Menetrier, 2023 (benjamin.menetrier@met.no)
+Programming: Benjamin Menetrier (benjamin.menetrier@met.no)
 
 Licensing: this code is distributed under the APACHE 2 license
-  Copyright (c) 2023 Meteorologisk Institutt
+Copyright (c) 2023-2024 Meteorologisk Institutt
 """
 ###############################################################################
 # Imports
