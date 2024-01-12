@@ -84,7 +84,7 @@ print("Pure sampled covariance matrix:")
 
 # Exercise 1.2: play with the ensemble size N
 N_list = [10, 50, 250]
-for N in N_list:
+#for N in N_list:
     # ...
 
 # Exercise 1.3: compute a pure sampled covariance for 20 members (and don't overwrite it afterwards), apply it to the dirac vector and plot the result
@@ -118,7 +118,7 @@ L = np.matmul(Ul, np.transpose(Ul))
 
 # Exercise 2.3: play with the localization radius Rloc
 Rloc_list = [50.0, 25.0, 10.0, 1.0]
-for Rloc in Rloc_list:
+#for Rloc in Rloc_list:
     # ...
 
 # Exercise 2.4: dirac test on the localized covariance with Rloc = 25
@@ -144,10 +144,7 @@ for Rloc in Rloc_list:
 print("Hybrid covariance matrix:")
 
 # Exercise 3.1: generate localized covariance with localization cut-off length-scale 20.0
-Rloc = 20.0
-Ul = define_correlation_sqrt(n, Rloc)
-L = np.matmul(Ul, np.transpose(Ul))
-Bloc = Bens*L
+# ...
 
 # Exercise 3.2: generate a static B of cut-off length-scale 50.0
 Rsta = 50.0
@@ -160,7 +157,7 @@ plot_matrix(Bs, "Static covariance")
 
 # Exercise 3.4: play with the hybrid weights, keeping the total variance constant (gammae + gammas = 1)
 gammae_list = [0.0, 0.33, 0.66, 1.0]
-for gammae in gammae_list:
+#for gammae in gammae_list:
     # ...
 
 # Exercise 3.5: dirac test on the localized covariance with weights = 0.6 / 0.4, full matrix
@@ -175,5 +172,4 @@ for gammae in gammae_list:
 # ...
 
 # 3.6.3: Plot result
-print("-> difference between both formulations: " + str(np.sum(np.abs(dirac_test_seq-dirac_test))))
-plot_vector(dirac_test, "Dirac test: localized covariance, sequence of operators")
+
